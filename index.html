@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Koski</title>
+    <link rel="icon" href="icon.png" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #191919;
+        --fg: #f2f2f2;
+        --muted: #a3a3a3;
+        --line: #3a3a3a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+      }
+      main {
+        width: min(28rem, calc(100% - 2.5rem));
+        padding: 3rem 0;
+      }
+      img {
+        width: 6.5rem;
+        height: 6.5rem;
+        border-radius: 22%;
+        display: block;
+      }
+      h1 {
+        margin: 1.25rem 0 0;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+      p { line-height: 1.7; }
+      .lead {
+        margin: 0.75rem 0 0;
+        color: var(--muted);
+      }
+      .meta {
+        margin: 1.5rem 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      a.download {
+        display: inline-block;
+        margin-top: 1.75rem;
+        padding: 0.75rem 1.15rem;
+        border-radius: 999px;
+        background: var(--fg);
+        color: #191919;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .note {
+        margin-top: 2rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="icon.png" alt="" />
+      <h1>Koski</h1>
+      <p class="lead">チェックした画像に、手順をまとめて適用する Mac アプリです。</p>
+      <p class="meta">0.0.1-beta · Apple Silicon</p>
+      <a class="download" href="https://github.com/hirotosawada/koski/releases/download/v0.0.1-beta/Koski-0.0.1-beta-arm64.dmg">dmg をダウンロード</a>
+      <p class="note">
+        公証していないので、初回は「開発元を確認できないため開けません」と出ます。システム設定の「プライバシーとセキュリティ」から「このまま開く」を選んでください。Intel の Mac では動きません。
+      </p>
+    </main>
+  </body>
+</html>
