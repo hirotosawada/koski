@@ -1,0 +1,194 @@
+:root {
+  --bg: #191919;
+  --fg: #f2f2f2;
+  --muted: #a3a3a3;
+  --line: #3a3a3a;
+  color-scheme: dark;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
+  margin: 0;
+
+  color: var(--fg);
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+
+  background: var(--bg);
+}
+
+main {
+}
+
+.content {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.icon {
+  display: block;
+  width: 6.5rem;
+  height: 6.5rem;
+
+  border-radius: 22%;
+}
+
+h2 {
+  margin: 0 0 1rem;
+
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1rem;
+}
+
+.app__icon {
+  width: 7rem;
+  height: 7rem;
+}
+
+.app__content {
+}
+
+.app__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.app__version {
+  margin: 0.5em 0 0;
+}
+
+.app__meta {
+  margin: 0.5em 0 0;
+
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.lead {
+  margin: 1.5rem 0;
+}
+
+.media {
+  margin: 1.75rem 0 0;
+}
+
+.media .plyr {
+  --plyr-color-main: #191919;
+  /* border-radius: 12px;
+  --plyr-video-control-color: #191919;
+  border: 1px solid var(--line);
+  --plyr-video-control-color-hover: #191919;
+  --plyr-video-control-background-hover: var(--fg);
+  --plyr-range-fill-background: var(--fg);
+  --plyr-video-background: #111; */
+}
+
+/* section */
+.section {
+  padding-block: 2rem;
+}
+
+.download {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.download__item {
+  padding: 1.25rem 1rem;
+
+  background: rgba(255 255 255/5%);
+  border-radius: 12px;
+}
+
+.download__btn {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+
+  color: #191919;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+
+  background: var(--fg);
+  border-radius: 999px;
+
+  transition: 0.2s;
+}
+
+.download__btn:hover {
+  color: #fff;
+
+  background: #191919;
+}
+
+.download__note {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+
+  padding-left: 1.25em;
+
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-indent: -1.25em;
+}
+
+.download__note::before {
+  margin-right: 0.25em;
+
+  content: "※";
+}
+
+.changelog {
+}
+
+.changelog__item {
+  padding: 1rem 0;
+
+  border-top: 1px dashed var(--line);
+}
+
+.changelog__date {
+  display: inline-block;
+}
+
+.changelog__version {
+  display: inline-block;
+  width: 7rem;
+  margin-right: 1rem;
+}
+
+.changelog__description {
+  display: block;
+  padding-left: 1rem;
+}
+
+.footer {
+  padding: 1rem 0;
+
+  background: #000;
+}
